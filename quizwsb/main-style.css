@@ -1,0 +1,55 @@
+body{background-image: url(images/tree_bark.png);}
+
+.box-content-left i{font-size: 250px; opacity:.6; color: green}
+.box-content, .box-content-left{background: rgba(255,255,255,.3); padding: 30px;}
+.box-content input, button, .btn-a{color: #fff !important; padding: 30px 15px !important; font-weight: 500 !important; font-size: 16px !important;}
+.box-content input, button, .bg-green{background: rgba(4,90,4,.8) !important;}
+.box-content input::placeholder {color: #fff;}
+.box-content button{padding: 20px 40px !important}
+
+.text-danger{margin-top: 25px !important}
+
+.btn, input, select{border-radius: 0 !important; border: 0;} 
+/* The container */
+.container-radio{display: block; position: relative; cursor: pointer; background: rgba(91,220,99,.9) !important; color: #fff !important; font-weight: 500 !important;} 
+		
+/* Hide the browser's default radio button */
+.container-radio input {position: absolute; opacity: 0;}
+
+/* Create a custom radio button */
+.checkmark {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+
+/* When the radio button is checked, add a blue background */
+.container-radio input:checked ~ .checkmark { 
+background: rgba(255,255,255,.3);
+-webkit-box-shadow: 1px 2px 9px 2px rgba(0,0,0,.2);
+-moz-box-shadow: 1px 2px 9px 2px rgba(0,0,0,.2);
+box-shadow: 1px 2px 9px 2px rgba(0,0,0,.2);
+border-bottom: 6px solid #efef;
+}
+
+/* Style the indicator (dot/circle) */
+.container-radio .checkmark:after { background: none;}
+		
+h3, h6{color: #0E8216;}
+		
+section{padding: 20px 10px !important; background: rgba(255,255,255,.3);border-bottom: 4px solid #ddd; margin-left: auto; margin-right: auto; }
+
+.box-instruction li{background: none; border: none; border-bottom: 1px solid; border-radius: 0 !important;}
+.bar-user{background: rgba(0,0,0,.5); padding: 15px; color: #fff; font-weight: 700;}
+.box-score-info{background: #96ff3a85; padding:10px; font-size: 20px;}
+.score-player, .list-item{padding-top: 4px; padding-bottom:5px; border-bottom: 2px solid #000;}
+
+a, a:hover{text-decoration: none;}		
+@media all and (min-width:1024px){.container-radio:hover { background: rgba(4,90,4,.7) !important;}}
+@media all and (max-width:768px){.container{max-width: 100% !important;}}
+@media all and (max-width:767px) and (min-width: 569px){.box-content-left i{font-size: 150px;} .box-content-left{height: 230px;}}
+@media all and (max-width:568px){ .box-score-info{font-size: 18px;} .box-content-left i{font-size: 100px;} .box-content-left{height: 170px;}}
+@media all and (max-width:356px){.box-content button {padding: 20px 30px !important;}}
+@media all and (min-width:100px){.btn-box-left-content{position: absolute; left: 0; top:0; font-size: 14px !important; color: #ddd}
+.btn-box-left-content i{font-size: 30px; !important}}
+
+.good-answer{background: rgba(4,90,4,.8) !important;}
+.bad-answer, .btn-a, .btn-red{background: rgba(255,0,0,.7) !important}
+
+
